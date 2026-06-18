@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #FAE8ED;  /* Lavender Blush - خلفية وردية فاتحة جداً */
+  color: #5a3a4a;
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #FFC2D1, #FAE8ED);  /* Pink → Lavender Blush */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4a2c3a;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.85;
+  color: #6a4a5a;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  padding: 14px 20px;
+  width: 400px;
+  border: 2px solid #FDD5DF;  /* Main Pink */
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  background: #ffffff;
+  color: #4a2c3a;
+}
+
+.search-box input::placeholder {
+  color: #c9a8b8;
+}
+
+.search-box input:focus {
+  border-color: #FFB2C5;  /* Cherry Blossom Pink */
+  box-shadow: 0 0 0 3px rgba(255, 178, 197, 0.3);
+}
+
+.search-box button {
+  padding: 14px 28px;
+  background-color: #FFB2C5;  /* Cherry Blossom Pink */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-box button:hover {
+  background-color: #FFA289;  /* Amazing Pink - أغمق شوية */
+  transform: scale(1.03);
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(253, 213, 223, 0.4);  /* Main Pink shadow */
+  border: 1px solid #FDD5DF;  /* Main Pink */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(255, 178, 197, 0.4);  /* Cherry Blossom Pink shadow */
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #FFA289;  /* Amazing Pink */
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: #8a6a7a;
+  line-height: 1.5;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #FFB2C5;  /* Cherry Blossom Pink */
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #FFC2D1;  /* Pink */
+}
